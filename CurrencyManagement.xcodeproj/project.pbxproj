@@ -13,6 +13,8 @@
 		4105A8082B793D2F0069E27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4105A8072B793D2F0069E27D /* Assets.xcassets */; };
 		4105A80B2B793D2F0069E27D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4105A80A2B793D2F0069E27D /* Preview Assets.xcassets */; };
 		4105A8162B793D2F0069E27D /* CurrencyManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4105A8152B793D2F0069E27D /* CurrencyManagementTests.swift */; };
+		4105A8202B793DC90069E27D /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4105A81F2B793DC90069E27D /* Currency.swift */; };
+		4105A8232B793E2D0069E27D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4105A8222B793E2D0069E27D /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 		4105A80C2B793D2F0069E27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4105A8112B793D2F0069E27D /* CurrencyManagementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyManagementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4105A8152B793D2F0069E27D /* CurrencyManagementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyManagementTests.swift; sourceTree = "<group>"; };
+		4105A81F2B793DC90069E27D /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4105A8022B793D2E0069E27D /* RealityKitContent in Frameworks */,
+				4105A8232B793E2D0069E27D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,7 @@
 				4105A8072B793D2F0069E27D /* Assets.xcassets */,
 				4105A80C2B793D2F0069E27D /* Info.plist */,
 				4105A8092B793D2F0069E27D /* Preview Content */,
+				4105A81F2B793DC90069E27D /* Currency.swift */,
 			);
 			path = CurrencyManagement;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			name = CurrencyManagement;
 			packageProductDependencies = (
 				4105A8012B793D2E0069E27D /* RealityKitContent */,
+				4105A8222B793E2D0069E27D /* Alamofire */,
 			);
 			productName = CurrencyManagement;
 			productReference = 4105A7FC2B793D2E0069E27D /* CurrencyManagement.app */;
@@ -180,6 +186,9 @@
 				Base,
 			);
 			mainGroup = 4105A7F32B793D2E0069E27D;
+			packageReferences = (
+				4105A8212B793E2D0069E27D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 4105A7FD2B793D2E0069E27D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -214,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4105A8202B793DC90069E27D /* Currency.swift in Sources */,
 				4105A8062B793D2E0069E27D /* ContentView.swift in Sources */,
 				4105A8042B793D2E0069E27D /* CurrencyManagementApp.swift in Sources */,
 			);
@@ -483,10 +493,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		4105A8212B793E2D0069E27D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		4105A8012B793D2E0069E27D /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
+		};
+		4105A8222B793E2D0069E27D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4105A8212B793E2D0069E27D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

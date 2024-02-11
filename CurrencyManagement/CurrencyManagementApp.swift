@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let accessKey = "YOUR_ACCESS_KEY"
+
 @main
 struct CurrencyManagementApp: App {
     var body: some Scene {
